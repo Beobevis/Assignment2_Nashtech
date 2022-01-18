@@ -129,9 +129,11 @@
     }
     static List<Member> GetMaleMembers()
     {
-
         var result = members.Where(m => m.Gender.Equals("Male", StringComparison.CurrentCultureIgnoreCase)).ToList();
-
+        //using LinQ Query
+        // var result = (from member in members
+        //               where member.Gender == "Male"
+        //               select member).ToList();
         return result;
     }
     static Member GetOldestMemberbyAge()
@@ -139,6 +141,15 @@
         var MaxAge = members.Max(m => m.Age);
 
         return members.First(m => m.Age == MaxAge);
+        //using OrderBy
+        //return members.OrderByDescending(m=>m.Age).First();
+        //return members.OrderBy(m=>m.Age).Last();
+
+        //using LinQ Query
+        // var OldList = from member in members
+        //               orderby member.Age descending
+        //               select member;
+        // return OldList.First();
     }
     static Member GetOldestMemberbyDOB()
     {
@@ -146,16 +157,18 @@
         var MaxDays = members.Max(m => m.TotalDays);
         return members.First(m => m.TotalDays == MaxDays);
     }
-    static List<string> GetFullName(){
+    static List<string> GetFullName()
+    {
         var result = members.Select(m => m.FullName).ToList();
         return result;
     }
-    static Tuple<List<Member>,List<Member>,List<Member>> GetListMemberbyBirthYear(int year){
+    static Tuple<List<Member>, List<Member>, List<Member>> GetListMemberbyBirthYear(int year)
+    {
         var list1 = members.Where(m => m.DOB.Year == year).ToList();
         var list2 = members.Where(m => m.DOB.Year > year).ToList();
         var list3 = members.Where(m => m.DOB.Year < year).ToList();
 
-        return Tuple.Create(list1,list2,list3);
+        return Tuple.Create(list1, list2, list3);
     }
     static Member? GetMemberbyBirthPlace()
     {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pc Market\\Desktop\\Nashtech\\Assignment2\\Assignment2.csproj": {}
+    "c:\\Users\\Pc Market\\Desktop\\Nashtech\\Assignment2\\Assignment2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pc Market\\Desktop\\Nashtech\\Assignment2\\Assignment2.csproj": {
+    "c:\\Users\\Pc Market\\Desktop\\Nashtech\\Assignment2\\Assignment2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pc Market\\Desktop\\Nashtech\\Assignment2\\Assignment2.csproj",
+        "projectUniqueName": "c:\\Users\\Pc Market\\Desktop\\Nashtech\\Assignment2\\Assignment2.csproj",
         "projectName": "Assignment2",
-        "projectPath": "C:\\Users\\Pc Market\\Desktop\\Nashtech\\Assignment2\\Assignment2.csproj",
+        "projectPath": "c:\\Users\\Pc Market\\Desktop\\Nashtech\\Assignment2\\Assignment2.csproj",
         "packagesPath": "C:\\Users\\Pc Market\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pc Market\\Desktop\\Nashtech\\Assignment2\\obj\\",
+        "outputPath": "c:\\Users\\Pc Market\\Desktop\\Nashtech\\Assignment2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Visual Studio\\SDKs\\NuGetPackages"
